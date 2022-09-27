@@ -1,6 +1,7 @@
 class App extends React.Component {
     state = {
-        packlists:[]
+        packlists:[],
+        trips:[]
     }
 
     componentDidMount = () => {
@@ -12,7 +13,15 @@ class App extends React.Component {
             }
         )
     }
-
+    componentTwo = () => {
+        axios.get('/trip').then(
+            (response) => {
+                this.setState({
+                    trips:response.data
+                })
+            }
+        )
+    }
     createPackList = (event) => {
         event.preventDefault();
         axios.post(
@@ -35,7 +44,23 @@ class App extends React.Component {
             }
         )
     }
-
+    createTrip = (event) => {
+        event.preventDefault();
+        axios.post(
+            '/trip',
+            {
+                trip:this.state.newTrip,
+                days:this.state.newDays,
+                dates:this.state.newDates,
+            }
+        ).then(
+            (response) => {
+                this.setState({
+                    trips:response.data
+                })
+            }
+        )
+    }
     changeNewDay = (event) => {
         this.setState({
             newDay:event.target.value
@@ -75,6 +100,23 @@ class App extends React.Component {
     changeNewImage = (event) => {
         this.setState({
             newImage:event.target.value
+        });
+    }
+    changeNewTrip = (event) => {
+        this.setState({
+            newTrip:event.target.value
+        });
+    }
+
+    changeNewDays = (event) => {
+        this.setState({
+            newDays:event.target.value
+        });
+    }
+
+    changeNewDates = (event) => {
+        this.setState({
+            newDates:event.target.value
         });
     }
 
@@ -158,6 +200,30 @@ class App extends React.Component {
     }
     render = () => {
         return <div>
+                <div class="leftContainer">
+                <div class="left">
+                <h2>Upcoming Trips:</h2>
+              {
+                this.state.trips.map(
+                    (trip) => {
+                        return (
+                            <div className="tripsContainer">
+                            <ul>{trip.trip}, {trip.days}, {trip.dates}</ul>
+                            </div>
+                        )
+                    }
+                )
+              }
+            <div className="newContainer2">
+            <form onSubmit={this.createTrip}>
+                <input onKeyUp={this.changeNewTrip} type="text" placeholder="trip" /><br/>
+                <input onKeyUp={this.changeNewDays} type="text" placeholder="Days" /><br/>
+                <input onKeyUp={this.changeNewDates} type="text" placeholder="Dates" /><br/>
+                <input type="submit" value="Add Trip" />
+            </form>
+            </div>
+                </div>
+                </div>
             <div className="mainContainer">
             <h2 className="currentList">Current Packing List</h2>
                 {
