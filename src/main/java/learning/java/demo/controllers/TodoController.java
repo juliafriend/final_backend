@@ -48,23 +48,6 @@ public class TodoController {
         return Todos.findAll();
     }
 
-    // @CrossOrigin // Enable CORS <-
-    // @PutMapping("/todos/{id}")
-    // public List<Todo> update(@RequestBody Todo fixTodo, @PathVariable Integer id){
-    //     // Find Todo by it's then use map to update it
-    //     Todos.findById(id).map(Todo -> {
-
-    //     Todo.setSubject(fixTodo.getSubject());
-    //     Todo.setDetails(fixTodo.getDetails());
-        
-    //     Todos.save(Todo);
-    //     return Todo;
-
-    //     });
-
-        // return all Todos
-    //     return Todos.findAll();
-    // }
     @CrossOrigin
 	@PutMapping("/pack/{id}")
 	public List<Todo> update(@RequestBody Todo packlistData, @PathVariable Integer id) {
@@ -79,5 +62,4 @@ public class TodoController {
         Todos.deleteById(id);
         return Todos.findAll();
     }
-
 }
