@@ -208,7 +208,7 @@ class App extends React.Component {
                     (trip) => {
                         return (
                             <div className="tripsContainer">
-                            <ul>{trip.trip}, {trip.days}, {trip.dates}</ul>
+                            <ul>- {trip.dates}: {trip.trip} for {trip.days}, </ul>
                             </div>
                         )
                     }
@@ -220,6 +220,7 @@ class App extends React.Component {
                 <input onKeyUp={this.changeNewDays} type="text" placeholder="Days" /><br/>
                 <input onKeyUp={this.changeNewDates} type="text" placeholder="Dates" /><br/>
                 <input type="submit" value="Add Trip" />
+                <input type="reset" value="Reset" />
             </form>
             </div>
                 </div>
@@ -245,6 +246,7 @@ class App extends React.Component {
                                     <input onKeyUp={this.changeUpdateOutfitTwo} type="text" placeholder="Outfit 2"/><br/>
                                     <input onKeyUp={this.changeUpdateOutfitThree} type="text" placeholder="Outfit 3"/><br/>
                                     <input type="submit" value="Update List"/>
+                                    <input type="reset" value="Reset" />
                                 </form>
                                 <button value={packlist.id} onClick={this.deletePacklist}>Delete</button>
                                 </details>
@@ -263,6 +265,7 @@ class App extends React.Component {
                 <input onKeyUp={this.changeNewItems} type="text" placeholder="items" /><br/>
                 <input onKeyUp={this.changeNewImage} type="text" placeholder="image" /><br/>
                 <input type="submit" value="Add to List" />
+                <input type="reset" value="Reset" />
             </form>
             </div>
             </div>
