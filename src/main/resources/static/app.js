@@ -129,6 +129,15 @@ class App extends React.Component {
             }
         )
     }
+    deleteTrip = (event) => {
+        axios.delete('/trip/' + event.target.value).then(
+            (response) => {
+                this.setState({
+                    trips:response.data
+                })
+            }
+        )
+    }
 
     updatePacklist = (event) => {
         event.preventDefault();
@@ -209,6 +218,7 @@ class App extends React.Component {
                         return (
                             <div className="tripsContainer">
                             <ul>- {trip.dates}: {trip.trip} for {trip.days}, </ul>
+                            <button value={trip.id} onClick={this.deleteTrip}>x</button>
                             </div>
                         )
                     }
