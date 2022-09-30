@@ -55,6 +55,7 @@
     grid-row-start: 1;
     grid-row-end:1;
     place-items: center;
+    margin-top: 70px;
 }
 .left {
     background-color: #3e969b;
@@ -83,7 +84,7 @@
     padding: 0em;   
     height: 80px;
     place-items: center;
-    margin-top: 100px;
+    margin-top: 70px;
 }
 .footer-link {
     margin-right: 100px;
