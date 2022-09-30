@@ -79,10 +79,10 @@
     grid-column-end: 11;
     padding: 0em;   
     height: 80px;
+    place-items: center;
 }
 .footer-link {
     margin-right: 100px;
-    margin-top: 30px;
     color: white;
     font-size: 20px;
     padding: 2em;

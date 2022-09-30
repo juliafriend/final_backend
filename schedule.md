@@ -44,9 +44,11 @@ Wed Sep 28
     -outcomes @ 330
 
 Thu Sep 29
-
+    -look at WordPress
+    -ReadMe updates
+    -submit qualifying material
 Fri Sep 30
-
+    -finalize styling and content for java app
 Sat Oct 1
 
 Sun Oct 2
