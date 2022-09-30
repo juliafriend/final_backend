@@ -217,8 +217,8 @@ class App extends React.Component {
                     (trip) => {
                         return (
                             <div className="tripsContainer">
-                            <ul>- {trip.dates}: {trip.trip} for {trip.days}, </ul>
-                            <button value={trip.id} onClick={this.deleteTrip}>x</button>
+                            <ul>- {trip.dates}: {trip.trip} for {trip.days} 
+                            <button value={trip.id} onClick={this.deleteTrip}>x</button> </ul>
                             </div>
                         )
                     }
@@ -243,7 +243,7 @@ class App extends React.Component {
                             return (   
                                 <div className="container">
                                 <h2>{packlist.day}</h2>
-                                <h2>{packlist.date}</h2>
+                                <h3>{packlist.date}</h3>
                                 <h4>{packlist.outfitOne}</h4>
                                 <h4>{packlist.outfitTwo}</h4>
                                 <h4>{packlist.outfitThree}</h4>
