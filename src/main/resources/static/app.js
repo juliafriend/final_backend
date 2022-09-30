@@ -218,7 +218,8 @@ class App extends React.Component {
                         return (
                             <div className="tripsContainer">
                             <ul>- {trip.dates}: {trip.trip} for {trip.days} 
-                            <button value={trip.id} onClick={this.deleteTrip}>x</button> </ul>
+                            <button className= "btn" value={trip.id} onClick={this.deleteTrip}>x</button> 
+                            </ul>
                             </div>
                         )
                     }
