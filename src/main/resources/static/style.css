@@ -80,12 +80,14 @@
     padding: 0em;   
     height: 80px;
     place-items: center;
+    margin-top: 100px;
 }
 .footer-link {
     margin-right: 100px;
     color: white;
     font-size: 20px;
     padding: 2em;
+    place-items: center;
 }
 .outfitPic {
     height: 200px;
