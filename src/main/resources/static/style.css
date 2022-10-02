@@ -6,7 +6,8 @@
     background-color: rgb(228, 231, 232);
     grid-column-start: 1;
     grid-column-end: 11;
-    padding: 0em;    
+    padding: 0em;
+    height: 400px;    
 }
 .pic {
     height: 8vw;
