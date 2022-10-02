@@ -64,10 +64,8 @@
 .left {
     background-color: #3e969b;
     color: white;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 6; 
+    margin-right: 300px;
+    margin-left: 300px;
 }
 .btn {
     margin-left: 8px;
