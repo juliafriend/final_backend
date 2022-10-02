@@ -50,7 +50,7 @@ Thu Sep 29
 Fri Sep 30
     -finalize styling and content for java app
 Sat Oct 1
-
+    -finish portfolio
 Sun Oct 2
-
+    -final edits
 Mon Oct 3 - Presentation Day

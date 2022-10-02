@@ -216,11 +216,9 @@ class App extends React.Component {
                 this.state.trips.map(
                     (trip) => {
                         return (
-                            <div className="tripsContainer">
                             <ul>- {trip.dates}: {trip.trip} for {trip.days} 
                             <button className= "btn" value={trip.id} onClick={this.deleteTrip}>x</button> 
                             </ul>
-                            </div>
                         )
                     }
                 )

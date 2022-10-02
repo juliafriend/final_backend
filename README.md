@@ -5,7 +5,7 @@ PackMan - Your Packing Assistant
 
 Concept: An app to assist the user in packing for an upcoming trip. The model is to create a "packing list" with full CRUD functionality. Users can input day #, date, outfits, etc to assist in planning their packing. The first map displays basic cards with outline for packing, and 2nd map shows outfit details to get inspired!
 
-Tech: Java Backend with Spring-Boot Framework, PostGres DB, full CRUD operations React Frontend with JS, CSS styling
+Tech: Java Backend with Spring-Boot Framework, PostGres DB, full CRUD operations, React Frontend with JS, CSS styling
 
 Technical Challenges: 
 --spring.io : I first initialized this project from spring.io and was able to get the project working in my local environment. I was using Java 18 (which I later found out was deprecated and would not deploy to heroku) so I ended up scrapping this entire version of the project and started over with a Spring-Boot application created from VSCode with Java extensions and Java 17. 
