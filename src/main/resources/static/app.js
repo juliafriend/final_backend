@@ -209,8 +209,8 @@ class App extends React.Component {
     }
     render = () => {
         return <div>
-                <div class="leftContainer">
-                <div class="left">
+            <div className="mainContainer">
+                <div className="left">
                 <h2>Upcoming Trips:</h2>
               {
                 this.state.trips.map(
@@ -233,8 +233,7 @@ class App extends React.Component {
             </form>
             </div>
                 </div>
-                </div>
-            <div className="mainContainer">
+            
             <h2 className="currentList">Current Packing List</h2>
                 {
                     this.state.packlists.map(

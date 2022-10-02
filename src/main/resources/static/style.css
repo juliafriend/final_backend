@@ -76,7 +76,7 @@
     border: 1.5px solid black;
     padding: 1em;
     background-color: rgb(199, 199, 211);
-    grid-column-start: 9;
+    grid-column-start: 8;
     grid-row-start: 3;
     grid-row-end: 5;
 }
